@@ -13,6 +13,7 @@ const msg = {
   invalidUser: "User Credentials you have entered is invalid! Please Try Again",
   passworNotSet:
     "Pasword doesn't exists in this account! Please Reset or login with social account",
+  publicKeyRequired: " Public key is required"
 
 };
 

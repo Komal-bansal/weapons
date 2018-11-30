@@ -10,9 +10,7 @@ const UserSchema = new mongoose.Schema(
             type: String,
             required: [true, 'Name is Required']
         },
-        phone: {
-            type: String,
-        },
+        phone: String,
         email: {
             type: String,
             // required: true,
@@ -28,7 +26,13 @@ const UserSchema = new mongoose.Schema(
             type: String,
             required: [true, 'Password is required']
         },
-        active: Boolean
+        role: String,
+        publicKey: {
+            type: String,
+            required: [true, 'Public Key is required']
+        },
+        active: Boolean,
+        role: String
     }, {
         timestamps: true,
         versionKey: false

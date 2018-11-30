@@ -15,6 +15,15 @@ const registration = async (req, res) => {
     if (userExist) {
         throw msg.duplicateEmail;
     }
+    if (!body.password) {
+        throw msg.passwordRequired
+    }
+    if (!body.name) {
+        throw msg.userRequired
+    }
+    if (!body.publicKey) {
+        throw msg.publicKeyRequired
+    }
     let user = new User(body);
     let response = await user.save();
     sendMail(req, res, response.id);

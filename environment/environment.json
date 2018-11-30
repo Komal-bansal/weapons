@@ -1,7 +1,7 @@
 {
     "development": {
         "PORT": 8080,
-        "MONGODB_URI": "mongodb://aman:demo1234@ds119984.mlab.com:19984/weapons",
+        "MONGODB_URI": "mongodb://127.0.0.1:27017/weapons",
         "secret_token": "weaponsBlockchainProject"
     },
     "prod": {
