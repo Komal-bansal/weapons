@@ -4,7 +4,7 @@ const msg = {
   passwordRequired: "Password required",
   validationError: "Validation error",
   userRegistered: "User registration successful",
-  userNotFound: "User not verified or registered",
+  userNotFound: "User not registered",
   invalidCredentials: "Password you have entered is invalid! Please Try Again",
   loggedIn: "Succesfully Logged in User",
   invalidEmail: "Email address is not valid",
